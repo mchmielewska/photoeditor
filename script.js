@@ -19,6 +19,12 @@ const uploadImage = e => {
 const imageLoader = document.getElementById('uploader');
 imageLoader.addEventListener('change', uploadImage);
 
+const saveLink = document.getElementById("save");
+saveLink.addEventListener('click', function(e) {
+    saveLink.href = canvas.toDataURL();
+    saveLink.download = "file.jpg";
+}, false);
+
 const greyscale = () => {
     const imageData = ctx.getImageData(0,0, canvas.width, canvas.height);
     const data = imageData.data;
