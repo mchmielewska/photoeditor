@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Inknut+Antiqua&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div class="box">
+
+        <div class="header">
+            <h1>photo editor app</h1>
+        </div>
+
+        <div class="upload custom-file">
+            <label class="custom-file-label" for="uploader">Select file:</label>
+            <input class="custom-file-input" type="file" id="uploader">
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-outline-secondary">Greyscale</button>
+            <button class="btn btn-outline-secondary">Sepia</button>
+            <button class="btn btn-outline-secondary">Invert</button>
+            <button class="btn btn-outline-secondary">RGB > RBG</button>
+            <button class="btn btn-outline-secondary">RGB > BGR</button>
+            <button class="btn btn-outline-secondary">RGB > GBR</button>
+            <button class="btn btn-outline-secondary">RGB > GRB</button>
+            <button class="btn btn-outline-secondary">Clear</button>
+        </div>
+
+        <div class="canvas">
+            <canvas id="canvas"></canvas>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
